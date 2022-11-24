@@ -6,10 +6,11 @@ int a = Convert.ToInt32(Console.ReadLine());
 if (a > 5 && a <= 7)
 {
     Console.WriteLine("You have chosen a day off.");
-} else if ( a >= 1 && a <= 5)
-        {
-            Console.WriteLine("You have chosen a working day.");
-        }
+}
+else if ( a >= 1 && a <= 5)
+{
+    Console.WriteLine("You have chosen a working day.");
+}
 else
 {
     Console.WriteLine("The number does not correspond to the day of the week.");
