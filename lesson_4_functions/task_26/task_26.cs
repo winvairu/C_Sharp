@@ -21,7 +21,7 @@ while (true)
     {
         if (num == 0)
         {
-            WriteLine($"End");
+            WriteLine("End");
             break;
         }
         else if (num < 0)
