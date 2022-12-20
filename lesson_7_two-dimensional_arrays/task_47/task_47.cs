@@ -50,7 +50,7 @@ void printArray(double[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Write("{0,8:0.000}", matrix[i, j]);
+            Write("{0,8:}", matrix[i, j]);
         }
         WriteLine();
     }
