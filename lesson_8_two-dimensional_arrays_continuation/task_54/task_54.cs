@@ -59,7 +59,7 @@ void printArray(int[,] matrix)
     WriteLine();
 }
 
-int[,] createNewArray(int[,] matrix)
+int[,] sortingRows(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -89,5 +89,5 @@ WriteLine("Enter the number of columns of the two-dimensional array or enter \"0
 int column = inputValidation();
 int[,] twoDimensional = createArray(row, column);
 printArray(twoDimensional);
-int[,] newTwoDimensional = createNewArray(twoDimensional);
+int[,] newTwoDimensional = sortingRows(twoDimensional);
 printArray(newTwoDimensional);
