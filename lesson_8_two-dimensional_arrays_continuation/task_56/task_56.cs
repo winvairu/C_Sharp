@@ -58,7 +58,7 @@ void printArray(int[,] matrix)
     WriteLine();
 }
 
-int[] createNewArray(int[,] matrix)
+int[] createPrintNewArray(int[,] matrix)
 {
     int[] array = new int[matrix.GetLength(0)];
     WriteLine("Sum of row values:");
@@ -98,5 +98,5 @@ WriteLine("Enter the number of columns of the two-dimensional array or enter \"0
 int column = inputValidation();
 int[,] twoDimensional = createArray(row, column);
 printArray(twoDimensional);
-int[] newArray = createNewArray(twoDimensional);
+int[] newArray = createPrintNewArray(twoDimensional);
 printMinAmount(newArray);
