@@ -34,13 +34,6 @@ int sumRec(int a, int b)
     {
         return 0;
     }
-    else if (a > b)
-    {
-        int temp = a;
-        a = b;
-        b = temp;
-        return b + sumRec(a, b - 1);
-    }
     else
     {
         return b + sumRec(a, b - 1);
@@ -51,4 +44,10 @@ WriteLine("Enter the first number or enter \"0\" to exit:");
 int m = inputValidation();
 WriteLine("Enter the first number or enter \"0\" to exit:");
 int n = inputValidation();
+if (m > n)
+    {
+        int temp = m;
+        m = n;
+        n = temp;
+    }
 WriteLine(sumRec(m, n));
